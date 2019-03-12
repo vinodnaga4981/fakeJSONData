@@ -1,12 +1,14 @@
-[
-  {
-    "loc_id": 10001,
-    "loc_name": "Forum Mall - Koramangala",
-    "loc_name_abr": "forum krm"
-  },
-  {
-    "loc_id": 10002,
-    "loc_name": "Forum Neighbourhood - Whitefield",
-    "loc_name_abr": "forum nhbd whtfld"
-  }
-]
+{
+  stores: [
+    {
+      "loc_id": 10001,
+      "loc_name": "Forum Mall - Koramangala",
+      "loc_name_abr": "forum krm"
+    },
+    {
+      "loc_id": 10002,
+      "loc_name": "Forum Neighbourhood - Whitefield",
+      "loc_name_abr": "forum nhbd whtfld"
+    }
+  ]
+}

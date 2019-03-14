@@ -10,5 +10,185 @@
       "loc_name": "Forum Neighbourhood - Whitefield",
       "loc_name_abr": "forum nhbd whtfld"
     }
-  ]
+  ],
+  "asset_meta": {
+    "2101": {
+      "asset_type": "air_handling_unit",
+      "asset_type_id": 2101,
+      "param": {
+        "chilled_wtr_supply": "Chilled water supply",
+        "chilled_wtr_retrn": "Chilled water Return",
+        "ahu_supply_air": "AHU Supply Air",
+        "ahu_retrn_air": "AHU Return Air",
+        "supply_air_flw_switch": "Supply Air flow",
+        "return_air_flw_switch": "Return Air flow",
+        "auto_manual": "Auto/Manual",
+        "trip_status": "Trip Status",
+        "fire_damper_cntrl": "Fire Damper control",
+        "cooling_eff": "Cooling Efficiency",
+        "heat_trans_eff": "Heat Transfer Efficiency",
+        "filter_status": "Filter Status",
+        "energy_eff": "Energy Efficiency"
+      },
+      "controls": {
+        "acutator_ahu_damper": {
+          "name": "Acutator for AHU Damper",
+          "type": "SWITCH"
+        },
+        "activator_ctrl_chiller_wtr_supply": {
+          "name": "Activator controller for chiller water supply",
+          "type": "SLIDER",
+          "range": {
+            "min": 0,
+            "max": 100,
+            "step": 10
+          }
+        },
+        "ahu_pwr_status": {
+          "name": "AHU Power Status",
+          "type": "SWITCH"
+        }
+      }
+    }
+  },
+  "assets": {
+    "2101": [
+      {
+        "asset_id": 20001,
+        "asset_name": "Air Handling Unit - GF01",
+        "asset_name_abr": "AirHandlingUnitGF01",
+        "asset_type_id": 2101,
+        "zone_id": "gf",
+        "health": 0.8,
+        "zone_name": "Ground Floor",
+        "statusColor": "#43C581",
+        "param": {
+          "chilled_wtr_supply": {
+            "value": "32C"
+          },
+          "chilled_wtr_retrn": {
+            "value": "32C"
+          },
+          "ahu_supply_air": {
+            "value": "32C"
+          },
+          "ahu_retrn_air": {
+            "value": "32C"
+          },
+          "supply_air_flw_switch": {
+            "value": "OPEN"
+          },
+          "return_air_flw_switch": {
+            "value": "CLOSE"
+          },
+          "auto_manual": {
+            "value": "AUTO"
+          },
+          "trip_status": {
+            "value": "TRIPPED"
+          },
+          "fire_damper_cntrl": {
+            "value": "CLOSE"
+          },
+          "cooling_eff": {
+            "value": "95%",
+            "disp_color": "#34567"
+          },
+          "heat_trans_eff": {
+            "value": "95%",
+            "disp_color": "#34567"
+          },
+          "filter_status": {
+            "value": "Healthy",
+            "disp_color": "#34567"
+          },
+          "energy_eff": {
+            "value": "95%",
+            "disp_color": "#34567"
+          }
+        },
+        "controls": {
+          "acutator_ahu_damper": {
+            "value": "ON",
+            "nextState": "OFF"
+          },
+          "activator_ctrl_chiller_wtr_supply": {
+            "value": 40
+          },
+          "ahu_pwr_status": {
+            "value": "ON",
+            "nextState": "OFF"
+          }
+        }
+      },
+      {
+        "asset_id": 20002,
+        "asset_name": "Air Handling Unit - GF02",
+        "asset_name_abr": "AirHandlingUnitGF02",
+        "asset_type_id": 2101,
+        "zone_id": "gf",
+        "zone_name": "Ground Floor",
+        "health": 0.6,
+        "statusColor": "#DABD61",
+        "param": {
+          "chilled_wtr_supply": {
+            "value": "32C"
+          },
+          "chilled_wtr_retrn": {
+            "value": "32C"
+          },
+          "ahu_supply_air": {
+            "value": "34C"
+          },
+          "ahu_retrn_air": {
+            "value": "29C"
+          },
+          "supply_air_flw_switch": {
+            "value": "OPEN"
+          },
+          "return_air_flw_switch": {
+            "value": "CLOSE"
+          },
+          "auto_manual": {
+            "value": "AUTO"
+          },
+          "trip_status": {
+            "value": "TRIPPED"
+          },
+          "fire_damper_cntrl": {
+            "value": "CLOSE"
+          },
+          "cooling_eff": {
+            "value": "95%",
+            "disp_color": "#34567"
+          },
+          "heat_trans_eff": {
+            "value": "95%",
+            "disp_color": "#34567"
+          },
+          "filter_status": {
+            "value": "Healthy",
+            "disp_color": "#34567"
+          },
+          "energy_eff": {
+            "value": "95%",
+            "disp_color": "#34567"
+          }
+        },
+        "controls": {
+          "acutator_ahu_damper": {
+            "value": "ON",
+            "nextState": "OFF"
+          },
+          "activator_ctrl_chiller_wtr_supply": {
+            "value": 60
+          },
+          "ahu_pwr_status": {
+            "value": "ON",
+            "nextState": "OFF"
+          }
+        }
+      }
+    ]
+  }
 }
